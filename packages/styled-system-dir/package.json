@@ -1,6 +1,6 @@
 {
   "name": "styled-system-dir",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Provides a function to add direction (RTL/LTR) aware css props to your component",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -21,7 +21,7 @@
   "author": "Younes El Alami <shadoow.ma@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@styled-system-dir/core": "^0.0.0",
-    "@styled-system-dir/direction": "^0.0.0"
+    "@styled-system-dir/core": "^0.0.1",
+    "@styled-system-dir/direction": "^0.0.1"
   }
 }
