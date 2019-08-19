@@ -1,0 +1,60 @@
+{
+  "author": "Younes El Alami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShadOoW/styled-system-dir/issues"
+  },
+  "homepage": "https://github.com/ShadOoW/styled-system-dir#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShadOoW/styled-system-dir.git"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*",
+    "docs"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --color",
+    "clean": "lerna exec -- rm -rf dist",
+    "prepare": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "NODE_ENV=cjs lerna exec -- babel src -d dist --root-mode upward",
+    "build:esm": "NODE_ENV=esm lerna exec -- babel src -o dist/index.esm.js --root-mode upward",
+    "release": "lerna publish",
+    "cover": "yarn test --coverage",
+    "codecov": "yarn cover && npx codecov"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-transform-rename-import": "^2.3.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "jest": "^24.8.0",
+    "jest-styled-components": "^6.3.1",
+    "lerna": "^3.16.4"
+  },
+  "jest": {
+    "testMatch": [
+      "**/packages/**/test/*.js"
+    ],
+    "collectCoverageFrom": [
+      "**/packages/**/src/*.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ]
+  }
+}

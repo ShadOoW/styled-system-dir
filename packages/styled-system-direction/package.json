@@ -1,0 +1,26 @@
+{
+  "name": "styled-system-dir",
+  "description": "Provides a function to add direction (RTL/LTR) aware css props to your component",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "author": "Younes El Alami <shadoow.ma@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@styled-system-dir/direction": "^1.0.10"
+  },
+  "keywords": [
+    "dir",
+    "direction",
+    "rtl",
+    "ltr",
+    "styled-system",
+    "styled-components",
+    "design-system",
+    "react component",
+    "react",
+    "arabic",
+    "ui",
+    "css"
+  ]
+}
