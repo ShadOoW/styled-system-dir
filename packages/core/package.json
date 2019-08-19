@@ -1,0 +1,11 @@
+{
+  "name": "@styled-system-dir/core",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "author": "Younes El Alami <shadoow.ma@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
